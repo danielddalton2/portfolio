@@ -1,0 +1,67 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: navy;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 2%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 4%;
+
+}
+
+header ul li {
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+  }
+
+section.about-section, section.work-section, section.contact-section, section.resume-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* section.column-min-width {
+    min-width: 300px;
+} */
+
+section h2 {
+    width: 30%;
+    background-color: navy;
+    color: white;
+    text-align: right;
+    font-size: 3rem;
+    padding-left: 30px;
+    border-right: 10px solid cornflowerblue;
+}
+
+section p {
+    text-align: left;
+    width: 65%;
+    color: navy;
+}
