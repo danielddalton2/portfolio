@@ -1,10 +1,16 @@
+:root {
+    --navy: #000080;
+    --cornflower: #6495ed;
+    --white: #ffffff
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
-    height: 100px;
-    background-color: navy;
+    height: 85px;
+    background-color: var(--navy);
     margin: 0;
     width: 100%;
     display: flex;
@@ -12,7 +18,7 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: var(--white);
     font-size: 3rem;
     padding: 2%;
 }
@@ -32,10 +38,14 @@ header ul li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
-img {
+a:hover {
+    box-shadow: inset 0px 0px 8px var(--cornflower), 0 0 15px var(--cornflower);
+}
+
+.keyboard-img img {
     object-fit: fill;
     height: 100%;
     width: 100%;
@@ -46,22 +56,40 @@ section.about-section, section.work-section, section.contact-section, section.re
     justify-content: space-between;
   }
 
-/* section.column-min-width {
-    min-width: 300px;
-} */
-
 section h2 {
+    justify-content: center;
+    justify-content: space-around;
     width: 30%;
-    background-color: navy;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
     text-align: right;
     font-size: 3rem;
     padding-left: 30px;
-    border-right: 10px solid cornflowerblue;
+    border-right: 10px solid var(--cornflower);
 }
 
 section p {
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
     width: 65%;
-    color: navy;
+    color: var(--navy);
+    font-size: 2rem;
+    text-align: center;
+}
+
+a img {
+    height: 100%;
+    width: 100%;
+    width: 350px;
+    height: 300px;
+}
+
+a img:hover {
+    box-shadow: inset 0px 0px 8px var(--cornflower), 0 0 15px var(--cornflower);
+}
+
+h3 {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
 }
