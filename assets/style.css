@@ -68,7 +68,7 @@ section h2 {
     border-right: 10px solid var(--cornflower);
 }
 
-section p {
+section div {
     display: flex;
     justify-content: flex-start;
     width: 65%;
