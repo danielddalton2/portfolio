@@ -51,7 +51,7 @@ a:hover {
     width: 100%;
   }
 
-section.about-section, section.work-section, section.contact-section, section.resume-section {
+section.about-section, section.work-section, section.contact-section, section.resume-section, section.project-1 {
     display: flex;
     justify-content: space-between;
   }
